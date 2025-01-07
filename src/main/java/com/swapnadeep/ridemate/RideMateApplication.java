@@ -1,4 +1,4 @@
-package com.swapnadeep.week1.ridemate;
+package com.swapnadeep.ridemate;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

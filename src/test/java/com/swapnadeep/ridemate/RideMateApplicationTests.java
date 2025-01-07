@@ -1,4 +1,4 @@
-package com.swapnadeep.week1.ridemate;
+package com.swapnadeep.ridemate;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
