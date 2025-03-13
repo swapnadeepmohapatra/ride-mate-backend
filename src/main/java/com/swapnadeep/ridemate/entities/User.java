@@ -1,10 +1,13 @@
 package com.swapnadeep.ridemate.entities;
 
+import com.swapnadeep.ridemate.entities.enums.Roles;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+
+import java.util.Set;
 
 @Entity
 @NoArgsConstructor
@@ -25,4 +28,8 @@ public class User {
     @Column(unique = true)
     private String email;
     private String password;
+
+    @ElementCollection(fetch = FetchType.LAZY)
+    @Enumerated(EnumType.STRING)
+    private Set<Roles> roles;
 }
